@@ -1,0 +1,6 @@
+1. setup server.js file 
+2. require and invoke : express, path, sockets, body parser, ejs
+3. user sends a request for / which is a set up in server with a get, routed to a view page of the form
+4. when the user clicks submit , there will be a socket function attached to the click, this click will emit the information "posting_form"
+5. the server will also have a listener setup for this click to respond to the click, it stores all the information from the form and sends it back as updated_message, also another emit is sent as 'random_number' with random number generated between 1-1000;
+6. the client side will listen for these events and display the response in html
